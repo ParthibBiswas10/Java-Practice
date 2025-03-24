@@ -6,7 +6,7 @@ public class lowercase {
         String txt=sc.nextLine();
         String lowernew =txt.toLowerCase();
         System.out.print(lowernew);
-
+        sc.close();
 
     }
 }
