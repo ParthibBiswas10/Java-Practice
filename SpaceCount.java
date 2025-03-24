@@ -5,10 +5,12 @@ public class SpaceCount {
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter String: ");
         String Str=sc.nextLine();
-        //int SpaceCount=count(Str," ");
-        int DoubleSpaceCount=count(Str,"  ");
         int TripleSpaceCount=count(Str,"   ");
-        //System.out.println("Number of Single Space: "+SpaceCount);
+        String temp=Str.replace("   ","###");
+        int DoubleSpaceCount=count(temp,"  ");
+        temp=temp.replace("  ","##");
+        int SpaceCount=count(temp," ");
+        System.out.println("Number of Single Space: "+SpaceCount);
         System.out.println("Number of Double Space: "+DoubleSpaceCount);
         System.out.println("Number of Triple Space: "+TripleSpaceCount);
         sc.close();
