@@ -14,5 +14,6 @@ public class marks {
         }
         float avg = (float) total / n;
         System.out.print("The average Score is: " + avg);
+        sc.close();
     }
 }
