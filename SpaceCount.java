@@ -22,7 +22,7 @@ public class SpaceCount {
             Count++;
             //System.out.println(Count);
             index+=subStr.length();
-
+            
         }
         return Count;
 
