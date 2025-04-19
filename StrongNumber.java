@@ -2,7 +2,7 @@ import java.util.*;
 public class StrongNumber {
     public static int fact(int num){
         int a=1;
-        for(int i=1;i<=n;i++){
+        for(int i=1;i<=num;i++){
             a=a*i;
         }
         return a;
