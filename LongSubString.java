@@ -9,11 +9,15 @@ public class LongSubString {
             if(current.contains(String.valueOf(ch))){
                 int index=current.indexOf(ch);
                 current=current.substring(index+1);
-
+            }
+            else{
+                current=current+ch;
+                maxlen=Math.max(maxlen, current.length());
 
             }
 
         }
+        return maxlen;
 
     }
     public static void main(String[] args) {
