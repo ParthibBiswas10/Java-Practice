@@ -10,11 +10,9 @@ public class LongSubString {
                 int index=current.indexOf(ch);
                 current=current.substring(index+1);
             }
-            else{
-                current=current+ch;
-                maxlen=Math.max(maxlen, current.length());
-
-            }
+            
+            current=current+ch;
+            maxlen=Math.max(maxlen, current.length());
 
         }
         return maxlen;
