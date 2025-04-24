@@ -21,9 +21,11 @@ public class LongSubString {
 
     }
     public static void main(String[] args) {
+        System.out.print("Enter String: ");
         Scanner sc=new Scanner(System.in);
         String str=sc.nextLine();
         int result=check(str);
-
+        System.out.println("Length of Max Sub String: "+result);
+        
     }
 }
