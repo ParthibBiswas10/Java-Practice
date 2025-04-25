@@ -8,7 +8,7 @@ public class Nr{
         boolean isRepeat=false;
         for(int i=0;i<str.length();i++){
             isRepeat=false;
-            
+            if(str.charAt(i)!=' '){
             for(int j=0;j<str.length();j++){
                 if(i !=j && str.charAt(i)==str.charAt(j) ){
                     isRepeat=true;
@@ -19,7 +19,9 @@ public class Nr{
                 System.out.println("1st non Repeating Character: "+str.charAt(i));
                 break;
             }
-        }
+         }
+        
         sc.close();
     }
+}
 }
