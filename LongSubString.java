@@ -13,8 +13,9 @@ public class LongSubString {
             
             current=current+ch;
             maxlen=Math.max(maxlen, current.length());
-
+           
         }
+        System.out.println("Longest Substring: "+current);
         return maxlen;
 
     }
