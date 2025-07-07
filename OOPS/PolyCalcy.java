@@ -10,6 +10,6 @@ public class PolyCalcy {
         Cal obj=new Cal();
         System.out.println(obj.add(5,10));
         System.out.println(obj.add(5.21,6.17));
-        System.out.println(obj.add("result: ",50,10));
+        System.out.println(obj.add("result:  ",50,10));
     }
 }
