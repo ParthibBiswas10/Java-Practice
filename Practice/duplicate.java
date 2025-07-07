@@ -1,5 +1,5 @@
-import java.util.Scanner;
 
+import java.util.*;
 class duplicate {
     public static int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;
@@ -17,14 +17,15 @@ class duplicate {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Number of Array: ");
+        System.out.println("Enter Size of Array: ");
         int n = sc.nextInt();
         int arr[] = new int[n];
         
-        System.out.println("Enter array elements in sorted order:");
+        System.out.println("Enter array elements :");
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
+        Arrays.sort(arr);
         
         int newLength = removeDuplicates(arr);
         System.out.println("Length after removing duplicates: " + newLength);
