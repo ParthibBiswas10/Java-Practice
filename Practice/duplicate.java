@@ -28,7 +28,7 @@ class duplicate {
         Arrays.sort(arr);
         
         int newLength = removeDuplicates(arr);
-        System.out.println("Length after removing duplicates: " + newLength);
+        System.out.println("Length after removing duplicates:" + newLength);
         
         System.out.print("Array after removing duplicates: ");
         for (int i = 0; i < newLength; i++) {
