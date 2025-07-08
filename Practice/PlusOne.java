@@ -11,9 +11,9 @@ public class PlusOne{
             for (int i = n - 1; i >= 0; i--) {
                 if (digits[i] < 9) {
                     digits[i]++;
-                    return digits; // Done
+                    return digits; 
                 }
-                digits[i] = 0; // Carry over
+                digits[i] = 0; 
             }
 
             // If all were 9s, we need a new array like [1, 0, 0, ...]
@@ -23,7 +23,7 @@ public class PlusOne{
         }
     }
 
-    // Main method to test the function
+ 
     public static void main(String[] args) {
         Solution sol = new Solution();
 
