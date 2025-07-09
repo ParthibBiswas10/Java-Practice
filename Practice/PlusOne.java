@@ -27,7 +27,7 @@ public class PlusOne{
     public static void main(String[] args) {
         Solution sol = new Solution();
 
-        int[] input = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        int[] input = {9, 8, 7, 6, 5, 4, 3, 2, 1,1, 0};
         int[] output = sol.plusOne(input);
 
         System.out.println("Output: " + Arrays.toString(output));
