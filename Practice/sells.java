@@ -18,7 +18,7 @@ public class Sells {
     public static void main(String[] args) {
         Sells solution = new Sells();
         
-        int[] prices = {7, 1, 5, 3, 6, 4};
+        int[] prices = {7, 1, 5, 3, 6, 8};
         int result = solution.maxProfit(prices);
         
         System.out.println("Maximum profit: " + result);
