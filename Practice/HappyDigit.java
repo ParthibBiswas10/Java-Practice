@@ -30,3 +30,23 @@ class Solution {
         System.out.println(n + " is " + (result ? "happy" : "not happy"));
     }
 }
+/*Happy Number in C:
+ bool isHappy(int n) {
+    int getNext(int num) {
+        int sum = 0;
+        while (num > 0) {
+            int digit = num % 10;
+            sum += digit * digit;
+            num /= 10;
+        }
+        return sum;
+    }
+
+    while (n != 1 && n != 4) {
+        n = getNext(n);
+    }
+
+    return n == 1;
+}
+
+ */
