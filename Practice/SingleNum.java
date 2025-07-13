@@ -20,6 +20,6 @@ public class SingleNum {
             nums[i]=sc.nextInt();
         }
         int res= singleNumber(nums);
-        System.out.println("Non repeating Number: "+ res);
+        System.out.println("Non repeating Number:  "+ res);
     }
 }
