@@ -24,7 +24,7 @@ public class addDigit {
         addDigit solution = new addDigit();
         int result = solution.addDigits(num);
         
-        System.out.println("Sum of digits until single digit: " + result);
+        System.out.println("Sum of digits until single digit:  " + result);
     }
 }
 
