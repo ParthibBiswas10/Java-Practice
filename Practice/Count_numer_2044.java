@@ -6,7 +6,7 @@ class Solution {
         maxOr = 0;
         count = 0;
 
-        // Step 1: Calculate max OR
+        // Step 1: Calculate Max OR
         for (int num : nums) {
             maxOr |= num;
         }
