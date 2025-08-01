@@ -7,7 +7,7 @@ class Solution {
         
         for (int num : arr) {
             Set<Integer> curr = new HashSet<>();
-            curr.add(num);  // subarray of length 1
+            curr.add(num);  
             for (int p : prev) {
                 curr.add(p | num); // extend previous subarrays
             }
