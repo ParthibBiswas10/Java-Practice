@@ -12,7 +12,7 @@ class Solution {
                 curr.add(p | num); // extend previous subarrays
             }
             prev = curr;
-            result.addAll(curr); // add all ORs from this position
+            result.addAll(curr); 
         }
         
         return result.size();
