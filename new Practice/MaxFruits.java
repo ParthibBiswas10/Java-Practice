@@ -4,7 +4,7 @@ class Solution {
         int[] prefixSum = new int[n];
         int[] indices = new int[n];
 
-        // Build prefix sum and extract indices
+       
         for (int i = 0; i < n; i++) {
             indices[i] = fruits[i][0];
             prefixSum[i] = fruits[i][1] + (i > 0 ? prefixSum[i - 1] : 0);
@@ -13,7 +13,7 @@ class Solution {
         int maxFrutis = 0;
 
         for (int d = 0; d <= k / 2; d++) {
-            // First case: Move left 'd' steps then pick 'remain' steps
+           
             int remain = k - 2 * d;
             int i = startPos - d;
             int j = startPos + remain;
@@ -26,7 +26,7 @@ class Solution {
                 maxFrutis = Math.max(maxFrutis, total);
             }
 
-            // Second case: Move right 'd' steps then pick 'remain' steps
+            
             remain = k - 2 * d;
             i  = startPos - remain;
             j = startPos + d;
@@ -43,7 +43,6 @@ class Solution {
         return maxFrutis;
     }
 
-    // Helper method to find the lower bound index
     private int lowerBound(int[] arr, int target) {
         int left = 0, right = arr.length;
         while (left < right) {
@@ -57,7 +56,6 @@ class Solution {
         return left;
     }
 
-    // Helper method to find the upper bound index
     private int upperBound(int[] arr, int target) {
         int left = 0, right = arr.length;
         while (left < right) {
