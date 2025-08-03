@@ -18,7 +18,6 @@ class Solution {
             int i = startPos - d;
             int j = startPos + remain;
 
-            // Find the range [i, j] using binary search
             int left  = lowerBound(indices, i);
             int right = upperBound(indices, j) - 1;
 
