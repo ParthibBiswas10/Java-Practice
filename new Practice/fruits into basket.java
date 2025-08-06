@@ -18,7 +18,6 @@ class Solution {
                 unplaced++;
             }
         }
-
         return unplaced;
     }
 }
