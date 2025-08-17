@@ -1,6 +1,6 @@
 class Solution {
     public int maximum69Number (int num) {
-        // Convert number to string
+        // 
         String s = String.valueOf(num);
         
         // Convert to char array for modification
