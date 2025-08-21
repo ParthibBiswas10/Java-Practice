@@ -7,14 +7,13 @@ public class Solution {
         int count = 0;
 
         for (int i = 0; i < m; ++i) {
-            // update histogram for row i
+       
             for (int j = 0; j < n; ++j) {
                 histogram[j] = (mat[i][j] == 1) ? histogram[j] + 1 : 0;
             }
 
-            // stack of int[]{height, index, prevCount}
             Deque<int[]> st = new ArrayDeque<>();
-            st.push(new int[]{-1, -1, 0}); // sentinel
+            st.push(new int[]{-1, -1, 0}); 
 
             int currCount = 0;
             for (int j = 0; j < n; ++j) {
