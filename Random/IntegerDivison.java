@@ -1,5 +1,8 @@
 class Solution {
     public int divide(int dividend, int divisor) {
+        if (dividend == Integer.MIN_VALUE && divisor == -1) {
+            return Integer.MAX_VALUE;
+        }
         boolean neg=(dividend<0) ^ (divisor<0);
         long n=Math.abs((long)dividend);
         long d=Math.abs((long)divisor);
@@ -15,10 +18,6 @@ class Solution {
             ans+=(1<<count);
             n=n-(d<<(count));
         }
-        if (ans == Integer.MIN_VALUE && !neg)
-            return Integer.MAX_VALUE;
-        else if (ans == Integer.MIN_VALUE && neg)
-            return Integer.MIN_VALUE;
              return neg? -ans : ans;
 
     }
