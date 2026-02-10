@@ -6,10 +6,10 @@ class Solution {
             int odd=0;
             Set<Integer>set=new HashSet<>();
             for(int j=i;j<nums.length;j++){
-                if(!set.contains(nums[j])){
+                if(set.add(nums[j])){
                     if(nums[j]%2==0)even++;
                     else odd++;
-                    set.add(nums[j]);
+                    //set.add(nums[j]);
                 }
                 if(even==odd){
                     max=Math.max(max,j+1-i);
