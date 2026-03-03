@@ -7,10 +7,11 @@ class Solution {
             return findKthBit(n-1,k);
          } 
         else if(k==mid) return '1';
-        else {
+        else if(k>mid){
             char value=findKthBit(n-1,len-(k-1));
             if(value=='0') return '1';
             else return '0';
          }
+         return '0';
     }
 }
