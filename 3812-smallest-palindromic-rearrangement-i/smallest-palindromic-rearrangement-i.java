@@ -1,13 +1,12 @@
 class Solution {
     public String smallestPalindrome(String s) {
-        int n=s.length();
-        int mid=n/2;
-        char[] first=s.substring(0,mid).toCharArray();
-        Arrays.sort(first);
-        String firsthalf=new String(first);
-       String secondhalf=new StringBuilder(firsthalf).reverse().toString();
-       if(n%2!=0)
-        return firsthalf+s.charAt(mid)+secondhalf;
-        return firsthalf+secondhalf;
+        int n = s.length();
+        int mid = n / 2;
+        char[] chars = s.toCharArray();
+        Arrays.sort(chars, 0, mid); // note: mid is not included i.e. [0, mid)
+        for (int i = 0; i < mid; i++) {
+            chars[n - 1 - i] = chars[i];
+        }
+        return new String(chars);
     }
 }
