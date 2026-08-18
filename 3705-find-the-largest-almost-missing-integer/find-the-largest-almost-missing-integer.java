@@ -2,7 +2,6 @@ class Solution {
     public int largestInteger(int[] nums, int k) {
         HashMap<Integer,Integer>map=new HashMap<>();
         int max=Integer.MIN_VALUE;
-        int[] arr=new int[k];
         for(int i=0;i<=nums.length-k;i++){
             HashSet<Integer>set=new HashSet<>();
 
