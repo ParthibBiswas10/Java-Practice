@@ -14,7 +14,7 @@ class Solution {
                 }
                 a = t[stack.peek()];
             }
-            if (!stack.isEmpty()) {
+            if (t[i]<a) {
                 ans[i] = stack.peek() - i;
             }
             stack.push(i);
