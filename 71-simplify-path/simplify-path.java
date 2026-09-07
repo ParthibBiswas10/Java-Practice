@@ -8,7 +8,7 @@ class Solution {
                 if(!token.equals("..")){
                 stack.push(token);
                 }
-                 else if(!stack.isEmpty()) stack.pop();
+                 else if(!stack.isEmpty() && token.equals("..")) stack.pop();
             
         }
          String res="";
