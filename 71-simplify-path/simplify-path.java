@@ -4,12 +4,12 @@ class Solution {
         String[] tokens=path.split("/");
         for(String token:tokens){
             if(token.equals(".") || token.equals(""))continue;
-            else{
+            
                 if(!token.equals("..")){
                 stack.push(token);
                 }
                  else if(!stack.isEmpty() && token.equals("..")) stack.pop();
-            }
+            
         }
          String res="";
         while(!stack.isEmpty()){
