@@ -1,0 +1,8 @@
+1. WAP to check whether the given no. is Armstrong No. or not (e.g. 153 .... sum of cubes of 1, 5 and 3 equals to 153)
+2. WAP to swap ith bit and jth bit of a 32-bit integer.
+3. WAP to sort only lowercase of a given string (E.g. "Rreeti123!" to "eeirt")
+4. WAP to sort the given array e.g. {0, 5, 0, 1, 1, 7, 0, 1} to {0, 0, 0, 5, 7, 1, 1, 1}
+5. You have a given an array, if you find 0 place at front of array and if you find 1 place at end of array and others
+number present at their position.
+6. Sort a string whose character in range a-z and return.
+7. Find the sum of digits of a given number.
