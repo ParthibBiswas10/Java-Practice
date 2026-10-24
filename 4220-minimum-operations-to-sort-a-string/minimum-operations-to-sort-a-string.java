@@ -1,7 +1,9 @@
 class Solution {
     public int minOperations(String s) {
         int n=s.length();
-   boolean sorted=true;
+       
+        boolean sorted=true;
+
         char[]arr=new char[n];
         arr=s.toCharArray();
         for(int i=1;i<n;i++){
@@ -11,11 +13,7 @@ class Solution {
             }
         }
         if(sorted) return 0;
-        if(n<=2) return -1;
-     
-
-        
-
+     if(n<=2) return -1;
         char highest=arr[0];
         char lowest=arr[0];
         for(int i=0;i<n;i++){
@@ -32,7 +30,9 @@ class Solution {
             midlowest=(char)Math.min(arr[i],midlowest);
         }
 
-    if (arr[0] > midhighest && arr[n-1] < midlowest) return 3;
-    return 2;
+if (arr[0] > midhighest && arr[n-1] < midlowest) {
+    return 3;
+}
+return 2;
     }
 }
